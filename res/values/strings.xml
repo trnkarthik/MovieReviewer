@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">RottenTomatoes</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_movies">MoviesActivity</string>
+    <string name="tempEmpty"></string>
+    <string name="title_activity_movie_desc">MovieDescActivity</string>
+    <string name="audience">Audience</string>
+    <string name="critics">Critics</string>
+    <string name="sampleNum">99%</string>
+    <string name="exit_button">Exit</string>
+    <string name="Remove">REMOVE</string>
+    <string name="ratingR">R</string>
+    <string name="ratingUnrated">Unrated</string>
+    <string name="ratingPG">PG</string>
+    <string name="ratingPG13">PG-13</string>
+    <string name="ratingAll">ALL</string>
+
+</resources>

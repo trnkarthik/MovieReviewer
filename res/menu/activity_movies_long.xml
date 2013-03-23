@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/remove_text"
+        android:icon="@drawable/content_remove"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/Remove"/>
+    <item
+        android:id="@+id/rating_all"
+        android:orderInCategory="9"
+        android:showAsAction="ifRoom"
+        android:title="@string/ratingAll"/>
+    <item
+        android:id="@+id/rating_r"
+        android:orderInCategory="10"
+        android:showAsAction="ifRoom"
+        android:title="@string/ratingR"/>
+    <item
+        android:id="@+id/rating_unrated"
+        android:orderInCategory="11"
+        android:showAsAction="ifRoom"
+        android:title="@string/ratingUnrated"/>
+    <item
+        android:id="@+id/rating_pg"
+        android:orderInCategory="12"
+        android:showAsAction="ifRoom"
+        android:title="@string/ratingPG"/>
+    <item
+        android:id="@+id/rating_pg13"
+        android:orderInCategory="13"
+        android:showAsAction="ifRoom"
+        android:title="@string/ratingPG13"/>
+
+</menu>
