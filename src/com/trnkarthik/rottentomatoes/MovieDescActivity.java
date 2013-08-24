@@ -1,11 +1,3 @@
-/*
-			Assignment # 5
-			File Name :MoviesDescActivity.java
-			Full name of all students in our group:
-			                   Raja Narasimha Karthik Tangirala. (UNC Charlotte ID : 800791204)
-			                   Chakraprakash Venigella .(UNC Charlotte ID : 800781600)
-
- */
 package com.trnkarthik.rottentomatoes;
 
 import java.io.BufferedReader;
@@ -57,7 +49,8 @@ public class MovieDescActivity extends Activity {
 			"api.rottentomatoes.com";
 
 	AdvMovies moviesObject;
-
+	
+	public String api_key = "your_api_key"; //replace this with your api key
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -380,7 +373,7 @@ public class MovieDescActivity extends Activity {
 
 			URI  uri = null ;
 
-			params.add(new BasicNameValuePair("apikey", "h5a2swvh6srbj3k252qur82h"));
+			params.add(new BasicNameValuePair("apikey", api_key));
 
 			uri  =  URIUtils.createURI("http", URLForRetrievingMovie, -1,"/api/public/v1.0/movies/"+movieIDCalled +".json" , 
 					URLEncodedUtils.format(params, "UTF-8"), null);
