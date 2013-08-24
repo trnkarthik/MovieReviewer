@@ -50,8 +50,6 @@ public class MovieDescActivity extends Activity {
 
 	AdvMovies moviesObject;
 	
-	public String api_key = "your_api_key"; //replace this with your api key
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -366,8 +364,8 @@ public class MovieDescActivity extends Activity {
 		public StringBuffer GetDataFromAPI() throws IOException, URISyntaxException
 		{
 
-
-
+			public String api_key = "your_api_key"; //replace this with your api key
+			
 			BufferedReader  in  = null;
 			List<NameValuePair>  params  = new ArrayList<NameValuePair>();
 
