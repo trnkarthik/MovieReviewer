@@ -1,11 +1,3 @@
-/*
-			Assignment # 5
-			File Name :MoviesActivity.java
-			Full name of all students in our group:
-			                   Raja Narasimha Karthik Tangirala. (UNC Charlotte ID : 800791204)
-			                   Chakraprakash Venigella .(UNC Charlotte ID : 800781600)
-
- */
 package com.trnkarthik.rottentomatoes;
 
 import java.io.BufferedReader;
@@ -643,9 +635,7 @@ public class MoviesActivity extends Activity {
 
 		public StringBuffer GetDataFromAPI() throws IOException, URISyntaxException
 		{
-
-
-
+			public String api_key = "your api key"; //replace this with your api key
 			BufferedReader  in  = null;
 			List<NameValuePair>  params  = new ArrayList<NameValuePair>();
 
@@ -658,7 +648,7 @@ public class MoviesActivity extends Activity {
 
 				params.add(new BasicNameValuePair("limit", "50"));
 				params.add(new BasicNameValuePair("country", "us"));
-				params.add(new BasicNameValuePair("apikey", "h5a2swvh6srbj3k252qur82h"));
+				params.add(new BasicNameValuePair("apikey", api_key));
 
 				uri  =  URIUtils.createURI("http", URLForBoxOfficeMovies, -1,"/api/public/v1.0/lists/movies/box_office.json" , 
 						URLEncodedUtils.format(params, "UTF-8"), null);
@@ -670,7 +660,7 @@ public class MoviesActivity extends Activity {
 				params.add(new BasicNameValuePair("page_limit", "50"));
 				params.add(new BasicNameValuePair("page", "1"));
 				params.add(new BasicNameValuePair("country", "us"));
-				params.add(new BasicNameValuePair("apikey", "h5a2swvh6srbj3k252qur82h"));
+				params.add(new BasicNameValuePair("apikey", api_key));
 
 				uri  =  URIUtils.createURI("http", URLForBoxOfficeMovies, -1,"/api/public/v1.0/lists/movies/in_theaters.json" , 
 						URLEncodedUtils.format(params, "UTF-8"), null);
@@ -681,7 +671,7 @@ public class MoviesActivity extends Activity {
 
 				params.add(new BasicNameValuePair("limit", "50"));
 				params.add(new BasicNameValuePair("country", "us"));
-				params.add(new BasicNameValuePair("apikey", "h5a2swvh6srbj3k252qur82h"));
+				params.add(new BasicNameValuePair("apikey", api_key));
 
 				uri  =  URIUtils.createURI("http", URLForBoxOfficeMovies, -1,"/api/public/v1.0/lists/movies/opening.json" , 
 						URLEncodedUtils.format(params, "UTF-8"), null);
@@ -693,7 +683,7 @@ public class MoviesActivity extends Activity {
 				params.add(new BasicNameValuePair("page_limit", "50"));
 				params.add(new BasicNameValuePair("page", "1"));
 				params.add(new BasicNameValuePair("country", "us"));
-				params.add(new BasicNameValuePair("apikey", "h5a2swvh6srbj3k252qur82h"));
+				params.add(new BasicNameValuePair("apikey", api_key));
 
 				uri  =  URIUtils.createURI("http", URLForBoxOfficeMovies, -1,"/api/public/v1.0/lists/movies/upcoming.json" , 
 						URLEncodedUtils.format(params, "UTF-8"), null);
@@ -983,7 +973,7 @@ public class MoviesActivity extends Activity {
 
 				URI  uri = null ;
 
-				params.add(new BasicNameValuePair("apikey", "h5a2swvh6srbj3k252qur82h"));
+				params.add(new BasicNameValuePair("apikey", api_key));
 
 				uri  =  URIUtils.createURI("http", "api.rottentomatoes.com", -1,"/api/public/v1.0/movies/"+movieIDCalled +".json" , 
 						URLEncodedUtils.format(params, "UTF-8"), null);
