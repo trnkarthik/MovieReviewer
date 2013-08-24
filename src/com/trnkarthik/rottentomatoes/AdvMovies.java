@@ -1,12 +1,3 @@
-/*
-			Assignment # 5
-			File Name :AdvMovies.java
-			Full name of all students in our group:
-			                   Raja Narasimha Karthik Tangirala. (UNC Charlotte ID : 800791204)
-			                   Chakraprakash Venigella .(UNC Charlotte ID : 800781600)
-
- */
-
 package com.trnkarthik.rottentomatoes;
 
 import android.annotation.SuppressLint;
